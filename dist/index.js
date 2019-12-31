@@ -11,7 +11,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const autorest_extension_base_1 = require("@azure-tools/autorest-extension-base");
 const extension = new autorest_extension_base_1.AutoRestExtension();
-extension.Add("namer", (autoRestApi) => __awaiter(void 0, void 0, void 0, function* () {
+extension.Add("fakenamer", (autoRestApi) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         // read files offered to this plugin
         const inputFileUris = yield autoRestApi.ListInputs();

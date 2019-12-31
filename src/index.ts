@@ -5,7 +5,7 @@ export type LogCallback = (message: string) => void;
 export type FileCallback = (path: string, rows: string[]) => void;
 
 const extension = new AutoRestExtension();
-extension.Add("namer", async autoRestApi => {
+extension.Add("fakenamer", async autoRestApi => {
     try
     {
         // read files offered to this plugin

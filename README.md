@@ -8,22 +8,19 @@ use-extension:
 
 
 pipeline-model: v3
-fakesdk: true
+fakesdk123: true
 
 pipeline:
     fakesdk:
         input: modelerfour
-        output-artifact: source-file-fakesdk
-        scope: fakesdk
+        scope: fakesdk123
 
-    fake/namer:
+    fakesdk/fakenamer:
         input: fakesdk
         output-artifact: source-file-fakesdk-namer
 
     fakesdk/emitter:
-        input: 
-            - fakesdk
-            - fake/namer
+        input: fakesdk/fakenamer
         scope: scope-fakesdk
 
 scope-fakesdk:
